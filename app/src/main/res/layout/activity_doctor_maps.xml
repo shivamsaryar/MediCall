@@ -1,0 +1,35 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextMapView"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Locate"
+            android:id="@+id/buttonViewMap"
+            android:layout_margin="5dp"
+             />
+    </LinearLayout>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    tools:context="com.shivamsaryar.medicalltest1.DoctorMapsActivity"
+    android:layout_marginTop="20dp" >
+</fragment>
+    </LinearLayout>
